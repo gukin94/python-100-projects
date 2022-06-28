@@ -10,9 +10,12 @@
 # fruit_list = ["Apple", "Banana", "Pear"]
 # fruit = fruit_list[3]
 
-# # TypeError
+# TypeError
 # text = "abc"
 # print(text + 5)
+
+# ZeroDivisionError
+print(5/0)
 
 # try, except, else, finally
 # FileNotFoundError
@@ -55,14 +58,14 @@
 # finally:
 #     raise TypeError("this is an error that I made up.")
 
-height = float(input("Height: "))
-weight = int(input("weight: "))
-
-if height > 3:
-    raise ValueError("Human Height should not be over 3 meters.")
-
-bmi = weight / height ** 2
-print(bmi)
+# height = float(input("Height: "))
+# weight = int(input("weight: "))
+#
+# if height > 3:
+#     raise ValueError("Human Height should not be over 3 meters.")
+#
+# bmi = weight / height ** 2
+# print(bmi)
 
 
 
