@@ -14,19 +14,21 @@
 # text = "abc"
 # print(text + 5)
 
-# ZeroDivisionError
-print(5/0)
+# try:
+#     print("asd")
+# except ZeroDivisionError
+# print(5/0)
 
 # try, except, else, finally
 # FileNotFoundError
-# try:
-#     file = open("a_file.txt")
-#     a_dictionary = {"key": "value"}
-#     print(a_dictionary["key"])
-#
-# except FileNotFoundError:
-#     file = open("a_file.txt", "w")
-#     file.write("Something")
+try:
+    file = open("a_file.txt")
+    a_dictionary = {"key": "value"}
+    print(a_dictionary["key"])
+
+except FileNotFoundError:
+    file = open("a_file.txt", "w")
+    file.write("Something")
 #
 # except KeyError as error_message:
 #     print(f"That key {error_message} does not exist")
@@ -67,6 +69,17 @@ print(5/0)
 # bmi = weight / height ** 2
 # print(bmi)
 
+# try:
+#     # 에러가 발생할 수 있는 코드를 이곳에 넣습니다.
+#
+# except :
+#     # 만약 에러가 발생한다면 이 구문이 실행됩니다.
+#
+# else:
+#     # 만약 에러가 발생하지 않는다면 이 구문이 실행됩니다.
+#
+# finally:
+#     # 에러 발생 여부와 관계없이 이 구문은 무조건 실행됩니다.
 
 
 
