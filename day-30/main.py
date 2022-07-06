@@ -21,16 +21,16 @@
 
 # try, except, else, finally
 # FileNotFoundError
-try:
-    file = open("a_file.txt")
-    a_dictionary = {"key": "value"}
-    print(a_dictionary["key"])
-
-except FileNotFoundError:
-    file = open("a_file.txt", "w")
-    file.write("Something")
+# try:
+#     file = open("a_file.txt")
+#     a_dictionary = {"key": "value"}
+#     print(a_dictionary["key"])
 #
-# except KeyError as error_message:
+# except FileNotFoundError:
+#     file = open("a_file.txt", "w")
+#     file.write("Something")
+# #
+# # except KeyError as error_message:
 #     print(f"That key {error_message} does not exist")
 #
 # else:
@@ -44,7 +44,7 @@ except FileNotFoundError:
 # try:
 #     file = open("a_file.txt")
 #     a_dictionary = {"key": "value"}
-#     print(a_dictionary["key"])
+#     print(a_dictionary["font_color"])
 #
 # except FileNotFoundError:
 #     file = open("a_file.txt", "w")
@@ -58,16 +58,17 @@ except FileNotFoundError:
 #     print(content)
 #
 # finally:
-#     raise TypeError("this is an error that I made up.")
+#     file.close()
+#     print("File was closed")
 
-# height = float(input("Height: "))
-# weight = int(input("weight: "))
-#
-# if height > 3:
-#     raise ValueError("Human Height should not be over 3 meters.")
-#
-# bmi = weight / height ** 2
-# print(bmi)
+height = float(input("Height: "))
+weight = int(input("weight: "))
+
+if height > 3:
+    raise ValueError("Human Height should not be over 3 meters.")
+
+bmi = weight / height ** 2
+print(bmi)
 
 # try:
 #     # 에러가 발생할 수 있는 코드를 이곳에 넣습니다.
@@ -83,3 +84,7 @@ except FileNotFoundError:
 
 
 
+# try:
+#     print(5/0)
+# except ZeroDivisionError as e:
+#     print(e)
